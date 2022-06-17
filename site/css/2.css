@@ -1,0 +1,297 @@
+/*----------------------------*/
+/*--------판매글열람페이지--------*/
+/*----------------------------*/
+.st4{
+    border: 0.5px solid lightgray;
+    background-color: lightgray;
+}
+#pdinfo{
+    width: 1000px;
+    display: inline-block;
+}
+#viewmain h4{
+    width: 1000px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+#pdimg{
+    display: inline-block;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px;
+}
+#pdimg img{
+    width: 350px;
+    height: 350px;
+}
+#pdtitle{
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px;
+    position: relative;
+}
+#pdtitle p{
+    font-size: 8pt;
+    display: inline-block;
+    text-align: right;
+    margin: 10px;
+    color: darkgray;
+}
+#pdinfo ul{
+    padding-left: 15px;
+}
+#pdinfo li{
+    margin-bottom: 20px;
+    font-size: 10pt;
+}
+#pdinfo span{
+    display: inline-block;
+    width: 100px;
+    color: gray;
+}
+li::marker{
+    color: gray;
+}
+/*----------------------------*/
+#btncontact{
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    margin: 20px 0 0 0;
+    height: 50px;
+    width: 140px;
+    border: none;
+}
+#btnurl{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px 0 0 0;
+    height: 50px;
+    width: 140px;
+    border: none;
+}
+/*----------------------------*/
+#pdaccount{
+    position: relative;
+    width: 1000px;
+    display: inline-block;
+
+}
+.accountbox{
+	width: 1000px;
+    height: 500px;
+    display: inline-block;
+}
+
+.viewtab { 
+    display:table; 
+    table-layout:fixed; 
+    border-left: 1px solid #e7e7e7;
+    padding-left: 0;
+}
+.viewtab li { 
+    display:table-cell; 
+    height:50px;
+    width: 200px;
+}
+.viewtab li a { 
+    display:block;
+    position:relative;
+    height:50px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #444;
+    line-height:50px;
+    text-align:center;
+}
+.viewtab li a:after { 
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; width:1px;
+    background:#e6e3df;
+}
+.viewtab li.on a, .viewtab li:hover a {
+    border-bottom-color:transparent; 
+    border-top:1px solid #444;
+}
+
+.viewtab li.on a:after, .viewtab li:hover a:after { 
+    content:''; 
+    display:block; 
+    position:absolute; 
+    top:0; right:0; bottom:-1px; width:1px; 
+    background:#444;
+}
+.viewtab li.on a:before, .viewtab li:hover a:before { 
+    content:''; 
+    display:block; 
+    position:absolute; 
+    top:0; left:0; bottom:-1px; width:1px; 
+    background:#444;
+}
+
+.tab-content{
+    height: 300px;
+	display: none;
+	padding: 15px;
+}
+
+.tab-content.current{
+    height: 300px;
+	display: inherit;
+}
+/*----------------------------*/
+.tabside{
+    border-bottom: 1px solid #444;
+    background-color: #444;
+    display: inline-block;
+    width: 600px;
+    position: absolute;
+    top: 58.5px;
+    left: 400px;
+}
+/*----------------------------*/
+.tab-content{
+    text-align: left;
+    position: relative;
+}
+.tab-content h3{
+    font-weight: normal;
+}
+/*----------------------------*/
+#댓글{
+    border: 1px solid rgb(142, 142, 142);
+}
+#댓글:focus{
+    outline: none;
+    border-color: black;
+}
+#btn댓글{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    height: 40px;
+    width: 100px;
+    border: none;
+}
+/*----------------------------*/
+.tablebox1{
+    position: absolute;
+    top: 200px;
+}
+/*----------상품목록-------------*/
+#listmain{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 237, 237);
+    height: 1600px;
+    text-align: center;
+}
+#listbox{
+    border-top: 3px solid black;
+    padding: 50px 50px 80px 50px;
+    background-color: white;
+    width: 1150px;
+    justify-content: center;
+    display: inline-block;
+    margin-top: 50px;
+
+}
+#listbox h2{
+    text-align: center;
+}
+/*----------------------------*/
+#lh{
+    display: inline-block;
+}
+#lp{
+    display: inline-block;
+    margin-left: 800px;
+    font-size: 10pt;
+}
+/*----------------------------*/
+/*------------faq-------------*/
+/*----------------------------*/
+#fm{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 237, 237);
+    height: 720px;
+    text-align: center;
+}
+#faqbox{
+    width: 1300px;
+    height: 600px;
+    background-color: white;
+    display: inline-block;
+    border-top: 3px solid black;
+    position: relative;
+}
+#fa{
+    margin: 50px;
+}
+#fa p{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: left;
+}
+#faqtable{
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+}
+#faqtable tr, #faqtable td, #faqtable th{
+    text-align: center;
+    
+}
+th{
+    border-bottom: 1px solid black;;
+}
+.col2{
+    width: 200px;
+    background-color: rgba(240, 240, 240, 0.33);
+}
+/*----------------------------*/
+/*----------------------------*/
+#qnaform{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 130px;
+    right: 80px;
+    border: none;
+    background-color: rgb(222, 234, 255);
+}
+#btnqnaok{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    border: none;
+}
+#qnaformmain{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 237, 237);
+    height: 720px;
+    text-align: center;
+}
+#qnaformbox{
+    display: inline-block;
+    width: 1000px;
+    height: 600px;
+    border-top: 3px solid black;
+    background-color: white;
+    margin: 50px 20px 0 20px;
+    overflow: hidden;
+    position: relative;
+}
